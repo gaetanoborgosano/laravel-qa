@@ -7,3 +7,11 @@ npm install
 php artisan migrate
 php artisan migrate:fresh
 php artisan serve
+
+// models
+git checkout -b stp2 
+
+php artisan make:model Question -m
+
+// go into database/migrations, there is a new migration create_questions_table.php . 
+// open this and write the table structure.
