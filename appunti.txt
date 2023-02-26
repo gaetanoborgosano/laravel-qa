@@ -1,1 +1,9 @@
-configurazione
+composer global require laravel/installer
+laravel new laravel-qa
+composer require laravel/ui
+php artisan ui vue --auth
+npm install
+-- configure DB_CONNECTION (credentials on .env and utf8 on database.php)
+php artisan migrate
+php artisan migrate:fresh
+php artisan serve
